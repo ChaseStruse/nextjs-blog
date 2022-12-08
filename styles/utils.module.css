@@ -45,8 +45,18 @@
   
   .listItem {
     margin: 0 0 1.25rem;
+    border-bottom: 3px solid rgb(175, 175, 175);
+  }
+
+  .postSummary {
+    padding-top: 0;
+    color: rgb(160, 160, 160);
+  }
+  
+  .lighterText{
+    color: rgb(120, 120, 120);
   }
   
   .lightText {
-    color: #666;
+    color: rgb(100, 100, 100)
   }

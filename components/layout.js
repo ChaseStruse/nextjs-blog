@@ -4,8 +4,13 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
+//  meta tags, used to describe a pages content, found in the Head
+// Notice in image tag that it has an attribute named `priority` that means it is preloaded asap
+
+
+
 const name = 'Chase Struse';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'The cool blog';
 
 export default function Layout({ children, home }) {
   return (
@@ -14,7 +19,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Blog site created using the nextjs tutorial"
         />
         <meta
           property="og:image"
@@ -30,8 +35,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
+              src="/images/profile.png"
               height={144}
               width={144}
               alt=""
@@ -43,8 +47,7 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
+                src="/images/profile.png"
                 height={108}
                 width={108}
                 alt=""
