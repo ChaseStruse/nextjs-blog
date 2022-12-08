@@ -32,3 +32,9 @@
 - DO NOT FETCH Api Route from getStaticProps or getStaticPaths
 - One use case would be creating a post method that can get called from a form that will save the data to the database. This route will not be apart of client bundle so it is safe.
 - API routes can be dynamic
+
+## Custom Fonts
+
+- To add custom fonts you must install `@next/font`
+- Checkout the custom font added in the `_app.js` file
+- Some things to note is that you can use `@next/font/google` to use any google font without having to download
